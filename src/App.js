@@ -7,7 +7,8 @@ function App() {
   return (
     <Fragment>
       <MyNavbar />
-      <div style={{ width: "100%", backgroundColor: "red" }}>eiei</div>
+      <div style={{ width: "100%", backgroundColor: "red",zIndex:'-1' }}>eiei</div>
+      <div style={{ height: "1000px" }}>ทดสอบๆ</div>
     </Fragment>
   );
 }
