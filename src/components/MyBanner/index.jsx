@@ -11,7 +11,7 @@ export class MyBanner extends Component {
   render() {
     return (
       <Fragment>
-        <Row>
+        <Row style={{ margin: 0 }}>
           <Col xs={4} md={4} style={{ padding: 0 }}>
             <Image
               src="https://www.xn--b3caa1e2a7e2b0h2be.com/img/hero_banner/banner-left.png"
