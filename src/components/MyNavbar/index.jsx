@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { HamburgerSlider } from "react-animated-burgers";
+import "./styles.css";
 
 class MyNavbar extends Component {
   constructor(props) {
@@ -52,6 +53,7 @@ class MyNavbar extends Component {
                 : this.props.navbarItems.map((value, i) => (
                     <Nav.Item key={i}>
                       <Nav.Link
+                        className="textColor"
                         href={value.href}
                         style={{
                           float: "right",
