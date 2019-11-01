@@ -23,7 +23,11 @@ export class MyBanner extends Component {
             <img
               src="https://www.xn--b3caa1e2a7e2b0h2be.com/img/logo/banner.png"
               alt="banner"
-              style={{ position: "absolute",width:"50%",marginTop:'10%',marginLeft:'25%' }}
+              style={{
+                position: "absolute",
+                width: "50%",
+                margin: "10% 0 0 25%"
+              }}
             />
             <img
               src="https://www.xn--b3caa1e2a7e2b0h2be.com/img/hero_banner/banner-center.png"
