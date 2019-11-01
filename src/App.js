@@ -23,14 +23,15 @@ export class App extends Component {
   }
 
   render() {
+    const { data } = this.state;
     return (
       <Fragment>
-        <MyNavbar />
+        <MyNavbar navbarItems={data.navbarItems} />
         <MyBanner />
         <RegisterBox />
         <Button
           onClick={() => {
-            console.log(this.state.data);
+            console.log(data);
           }}
         >
           data

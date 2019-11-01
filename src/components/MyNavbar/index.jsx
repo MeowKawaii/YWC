@@ -47,30 +47,23 @@ class MyNavbar extends Component {
             className="justify-content-center"
           >
             <Nav>
-              <Nav.Item>
-                <Nav.Link
-                  href="#home"
-                  style={{ float: "right", fontWeight: "bold",color:'black',padding:'14px 15px' }}
-                >
-                  Activeอิอิ
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link
-                  href="#home"
-                  style={{ float: "right", fontWeight: "bold",color:'black',padding:'14px 15px' }}
-                >
-                  Link
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link
-                  href="#home"
-                  style={{ float: "right", fontWeight: "bold",color:'black',padding:'14px 15px' }}
-                >
-                  Link
-                </Nav.Link>
-              </Nav.Item>
+              {this.props.navbarItems === undefined
+                ? null
+                : this.props.navbarItems.map((value, i) => (
+                    <Nav.Item key={i}>
+                      <Nav.Link
+                        href={value.href}
+                        style={{
+                          float: "right",
+                          fontWeight: "bold",
+                          color: "black",
+                          padding: "14px 15px"
+                        }}
+                      >
+                        {value.label}
+                      </Nav.Link>
+                    </Nav.Item>
+                  ))}
             </Nav>
           </Navbar.Collapse>
         </Navbar>
