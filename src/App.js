@@ -6,6 +6,7 @@ import RegisterBox from "./components/RegisterBox";
 import Detail from "./components/Detail";
 import BoxTAT from "./components/BoxTAT";
 import BoxKTC from "./components/BoxKTC";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Detail />
       <BoxTAT />
       <BoxKTC />
+      <Footer />
     </Fragment>
   );
 }
