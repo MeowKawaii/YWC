@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
+import "./styles.css";
+
 export class RegisterBox extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      backgroundColor: "#213A8F",
+      shadow: ""
+    };
   }
 
   render() {
@@ -22,9 +27,7 @@ export class RegisterBox extends Component {
           <b>ตั้งแต่วันที่</b>
         </p>
         <p>
-          <span
-            style={{ marginTop: "-10px", fontSize: "48px", color: "#E6332A" }}
-          >
+          <span className="durationTime">
             <b>{this.props.duration}</b>
           </span>
         </p>
@@ -34,14 +37,16 @@ export class RegisterBox extends Component {
           style={{
             width: "60%",
             margin: "10px 0",
-            backgroundColor: "#213A8F",
-            boxShadow: "0 15px 30px 0 rgba(28, 78, 132, 0.4)"
+            backgroundColor: `${this.state.backgroundColor}`,
+            boxShadow: `${this.state.shadow}`,
+            border: 0
           }}
-          onClick={() => {
-            console.log("eiei");
-          }}
+          onMouseEnter={this.backgroundColorYellow}
+          onMouseLeave={this.backgroundColorBlue}
+          onMouseUp={this.backgroundColorBlue}
+          onMouseDown={this.backgroundColorYellow}
         >
-          <span style={{ fontSize: 24 }}>
+          <span className="buttonRegister">
             <b>
               ขณะนี้มีผู้ลงทะเบียนสิทธิมาตรการฯ "ชิมช้อปใช้"
               ครบตามจำนวนที่กำหนดแล้ว
@@ -54,6 +59,20 @@ export class RegisterBox extends Component {
       </div>
     );
   }
+
+  backgroundColorBlue = () => {
+    this.setState({
+      backgroundColor: "#213A8F",
+      shadow: "0 15px 30px 0 rgba(28, 78, 132, 0.4)"
+    });
+  };
+
+  backgroundColorYellow = () => {
+    this.setState({
+      backgroundColor: "#FBBC33",
+      shadow: "none"
+    });
+  };
 }
 
 export default RegisterBox;
