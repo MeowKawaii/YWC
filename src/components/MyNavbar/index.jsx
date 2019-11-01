@@ -53,7 +53,7 @@ class MyNavbar extends Component {
                   href="#home"
                   style={{ float: "right", fontWeight: "bold",color:'black',padding:'14px 15px' }}
                 >
-                  Active
+                  Activeอิอิ
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
