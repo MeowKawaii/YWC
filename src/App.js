@@ -28,14 +28,7 @@ export class App extends Component {
       <Fragment>
         <MyNavbar navbarItems={data.navbarItems} />
         <MyBanner />
-        <RegisterBox />
-        <Button
-          onClick={() => {
-            console.log(data);
-          }}
-        >
-          data
-        </Button>
+        <RegisterBox duration={data.duration} />
         <Detail />
         <BoxTAT />
         <BoxKTC />
@@ -43,6 +36,8 @@ export class App extends Component {
       </Fragment>
     );
   }
+
+  // ======= Connect API ========
 
   getData = () => {
     fetch(`https://panjs.com/ywc.json`, {

@@ -25,7 +25,7 @@ export class RegisterBox extends Component {
           <span
             style={{ marginTop: "-10px", fontSize: "48px", color: "#E6332A" }}
           >
-            <b>23 กย. - 26 ตค.</b>
+            <b>{this.props.duration}</b>
           </span>
         </p>
         <Button
@@ -50,7 +50,7 @@ export class RegisterBox extends Component {
             </b>
           </span>
         </Button>
-        <hr style={{ marginTop: "-3%", width: "95%",zIndex:-1 }} />
+        <hr style={{ marginTop: "-3%", width: "95%", zIndex: -1 }} />
       </div>
     );
   }
