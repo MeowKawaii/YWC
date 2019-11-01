@@ -4,6 +4,7 @@ import MyNavbar from "./components/MyNavbar";
 import MyBanner from "./components/MyBanner";
 import RegisterBox from "./components/RegisterBox";
 import Detail from "./components/Detail";
+import BoxTAT from "./components/BoxTAT";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <MyBanner />
       <RegisterBox />
       <Detail />
+      <BoxTAT />
     </Fragment>
   );
 }
