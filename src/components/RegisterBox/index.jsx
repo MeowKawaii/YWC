@@ -50,6 +50,7 @@ export class RegisterBox extends Component {
             </b>
           </span>
         </Button>
+        <hr style={{ marginTop: "-3%", width: "95%",zIndex:-1 }} />
       </div>
     );
   }
