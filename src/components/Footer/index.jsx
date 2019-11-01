@@ -10,7 +10,7 @@ export class Footer extends Component {
 
   render() {
     return (
-      <footer class="app-footer">
+      <footer className="app-footer">
         {/* ======== Footer 1 ======== */}
         <div
           style={{
@@ -21,7 +21,7 @@ export class Footer extends Component {
           }}
         >
           <div
-            class="container"
+            className="container"
             style={{
               marginLeft: "auto",
               marginRight: "auto",
@@ -50,12 +50,12 @@ export class Footer extends Component {
                 </div>
                 <div style={{ fontSize: "14px", color: "#333333" }}>
                   การรับสิทธิ การใช้งานแอปพลิเคชั่น{" "}
-                  <span class="nowrap">“เป๋าตัง”</span> และ{" "}
-                  <span class="nowrap">“ถุงเงิน”</span>
+                  <span className="nowrap">“เป๋าตัง”</span> และ{" "}
+                  <span className="nowrap">“ถุงเงิน”</span>
                 </div>
                 <div style={{ fontSize: "14px", color: "#333333" }}>
                   ติดต่อ ชิมช้อปใช้ Call Center by Krungthai โทร.
-                  <span class="nowrap">0 2111 1144</span>
+                  <span className="nowrap">0 2111 1144</span>
                 </div>
               </Col>
               <Col xs={12} sm={4} md={3} lg={3}>
@@ -73,7 +73,7 @@ export class Footer extends Component {
                   เงื่อนไขและวิธีการเข้าร่วมมาตรการฯ
                 </div>
                 <div style={{ fontSize: "14px", color: "#333333" }}>
-                  ติดต่อ โทร.<span class="nowrap">0 2270 6400 กด 7</span>
+                  ติดต่อ โทร.<span className="nowrap">0 2270 6400 กด 7</span>
                 </div>
               </Col>
               <Col xs={12} sm={4} md={3} lg={3}>
