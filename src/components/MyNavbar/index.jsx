@@ -24,7 +24,6 @@ class MyNavbar extends Component {
           expand="sm"
           className="justify-content-end"
           style={{
-            height: "64px",
             boxShadow: "0 4px 10px 0 rgba(0, 0, 0, 0.1)",
             backgroundColor: "white"
           }}
