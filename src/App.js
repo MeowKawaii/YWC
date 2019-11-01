@@ -29,7 +29,7 @@ export class App extends Component {
         <MyNavbar navbarItems={data.navbarItems} />
         <MyBanner />
         <RegisterBox duration={data.duration} />
-        <Detail />
+        <Detail detail={data.detail} condition={data.condition} />
         <BoxTAT />
         <BoxKTC />
         <Footer />

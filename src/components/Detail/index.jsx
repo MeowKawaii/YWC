@@ -1,4 +1,4 @@
-import React, { Component} from "react";
+import React, { Component } from "react";
 
 export class Detail extends Component {
   constructor(props) {
@@ -32,13 +32,7 @@ export class Detail extends Component {
             </p>
             <div style={{ marginTop: 24 }}>
               <p style={{ margin: 0, fontSize: 18 }}>
-                ผู้สนใจเข้าร่วมมาตรการส่งเสริมการบริโภคในประเทศ “ชิมช้อปใช้”
-                รับเงินผ่าน “เป๋าตัง” {"("}G-Wallet{")"} รวมจำนวน 13 ล้านคน
-                ลงทะเบียนรับสิทธิ ได้ทางเว็บไซต์ www.ชิมช้อปใช้.com
-                <br />
-                ตั้งแต่วันที่ 23 กันยายน - 15 พฤศจิกายน 2562 {"("}รับลงทะเบียน
-                เฟส 2 ตั้งแต่วันที่ 24 ตุลาคม 2562 จำกัดจำนวนผู้ลงทะเบียน 1
-                ล้านคนต่อวัน จนกว่าจะครบ 3 ล้านคน{")"}
+                <div dangerouslySetInnerHTML={{ __html: this.props.detail }} />
               </p>
             </div>
 
@@ -47,12 +41,9 @@ export class Detail extends Component {
                 <b>เงื่อนไขการเข้าร่วมมาตรการ</b>
               </p>
               <p style={{ margin: "8px 0px 0px 0px", fontSize: 18 }}>
-                1. เป็นบุคคลสัญชาติไทย มีบัตรประจำตัวประชาชน
-                <br />
-                2. มีอายุตั้งแต่ 18 ปีบริบูรณ์ขึ้นไป ณ วันที่ลงทะเบียน
-                <br />
-                3.
-                มีโทรศัพท์มือถือสมาร์ทโฟนที่สามารถเชื่อมต่อสัญญาณอินเทอร์เน็ตและมีอีเมล
+                <div
+                  dangerouslySetInnerHTML={{ __html: this.props.condition }}
+                />
               </p>
             </div>
           </div>
