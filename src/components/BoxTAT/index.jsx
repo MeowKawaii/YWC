@@ -23,7 +23,8 @@ export class BoxTAT extends Component {
           style={{
             marginLeft: "auto",
             marginRight: "auto",
-            padding: "0px 15px"
+            padding: "0px 15px",
+            maxWidth: "960px"
           }}
         >
           <Row>
