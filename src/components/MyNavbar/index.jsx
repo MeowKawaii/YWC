@@ -23,12 +23,22 @@ class MyNavbar extends Component {
         <Navbar
           sticky="top"
           expand="sm"
-          className="justify-content-end"
+          // className="justify-content-end"
           style={{
             boxShadow: "0 4px 10px 0 rgba(0, 0, 0, 0.1)",
             backgroundColor: "white"
           }}
         >
+          <Navbar.Brand className="logo">
+            <img
+              src="https://www.xn--b3caa1e2a7e2b0h2be.com/img/logo/footer.png"
+              width="35"
+              height="48"
+              className="d-inline-block align-top"
+              alt="logo"
+              // style={{ display: "hidden" }}
+            />
+          </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             style={{ borderColor: "white", padding: 0 }}
