@@ -35,7 +35,6 @@ export class RegisterBox extends Component {
           size="lg"
           block
           style={{
-            width: "60%",
             margin: "10px 0",
             backgroundColor: `${this.state.backgroundColor}`,
             boxShadow: `${this.state.shadow}`,
@@ -45,6 +44,7 @@ export class RegisterBox extends Component {
           onMouseLeave={this.backgroundColorBlue}
           onMouseUp={this.backgroundColorBlue}
           onMouseDown={this.backgroundColorYellow}
+          className="button"
         >
           <span className="buttonRegister">
             <b>

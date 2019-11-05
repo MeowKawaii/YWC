@@ -8,6 +8,10 @@
     font-size: 24px !important;
   }
 
+  .button{
+    width: 60% !important
+  }
+
 @media only screen and (max-width: 580px) {
   .durationTime {
     font-size: 30px;
@@ -17,6 +21,10 @@
 
   .buttonRegister {
     font-size: 18px !important;
+  }
+
+  .button{
+    width: 90% !important
   }
 
   hr{
