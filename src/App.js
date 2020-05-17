@@ -7,7 +7,6 @@ import Detail from "./components/Detail";
 import BoxTAT from "./components/BoxTAT";
 import BoxKTC from "./components/BoxKTC";
 import Footer from "./components/Footer";
-import { Button } from "react-bootstrap";
 
 export class App extends Component {
   constructor(props) {

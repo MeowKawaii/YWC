@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./styles.css";
+import dompurify from 'dompurify';
 
 export class Detail extends Component {
   constructor(props) {
@@ -9,6 +10,8 @@ export class Detail extends Component {
   }
 
   render() {
+    const sanitizer = dompurify.sanitize;
+
     return (
       <div
         style={{
@@ -33,7 +36,7 @@ export class Detail extends Component {
             </p>
             <div style={{ marginTop: 24 }}>
               <p style={{ margin: 0 }} className="detail">
-                <div dangerouslySetInnerHTML={{ __html: this.props.detail }} />
+                <div dangerouslySetInnerHTML={{ __html: sanitizer(this.props.detail) }} />
               </p>
             </div>
 
@@ -43,7 +46,7 @@ export class Detail extends Component {
               </p>
               <p style={{ margin: "8px 0px 0px 0px" }} className="detail">
                 <div
-                  dangerouslySetInnerHTML={{ __html: this.props.condition }}
+                  dangerouslySetInnerHTML={{ __html: sanitizer(this.props.condition) }}
                 />
               </p>
             </div>
